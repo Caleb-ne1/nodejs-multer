@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Images using multer</title>
+    <style>
+        body {
+            background-color: #00798C;
+            color: white;
+        }
+        input[type="file"] {
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            color: black;
+        }
+
+        input[type="submit"] {
+            padding: 10px 40px;
+            background-color: #D1495B;
+            border: none;
+            color: white;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload images</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" id="">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
